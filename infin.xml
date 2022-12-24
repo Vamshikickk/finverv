@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="automation-finverv">
+
+	<parameter name="browser" value="chrome" />
+	<parameter name="siteURL" value="https://infin-dev.finverv.in/" />
+	<parameter name="validuserName" value="testing.team" />
+	<parameter name="validPassword" value="Qwerty@123" />
+	<parameter name="pinCode" value="504272" />
+	<parameter name="filterMobileNumber" value="9959561018" />
+
+	<test name="Login status" enabled="false">
+		<classes>
+			<class name="com.infin.test.LogInTest">
+				<methods>
+					<include name="logInWithValidCredentials" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Verify Modules" enabled="true">
+		<classes>
+			<class name="com.verifyModules.test.VerifyModulesTest">
+				<methods>
+					<include name="verifyModules" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Verifying Tabs" enabled="false">
+		<classes>
+			<class name="com.infin.leadbox.VerifyTabsTest">
+				<methods>
+					<include name="verifyTheTabs" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Create Application" enabled="false">
+		<classes>
+			<class name="com.infin.leadbox.CreateApplicationTest">
+				<methods>
+					<include name="createApplication" />
+					<include name="searchApplicationWithValidData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="LeadBox Personal Details" enabled="true">
+		<classes>
+			<class name="com.infin.leadbox.PersonalDetailsTest">
+				<methods>
+					<include name="setValidPersonalDetails" />
+					<include name="setValidPermanentAddress" />
+					<include name="setValidResidentAddress" />
+					<include name="setValidBankAccount" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="LeadBox Business Details" enabled="false">
+		<classes>
+			<class name="com.infin.leadbox.BusinessDetailsTest">
+				<methods>
+					<include name="setValidBusinessDetails" />
+					<include name="setValidCompanyAddress" />
+					<include name="setValidCompanyBankDetails" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="LeadBox Co-Borrower Details" enabled="false">
+		<classes>
+			<class name="com.infin.leadbox.CoBorrowerTest">
+				<methods>
+					<include name="setValidCoBorrowerDetails" />
+					<include name="setValidCoBorrowerAddressDetails" />
+					<include name="setValidEditCoBorrowerEditDetails" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="LeadBox Gst Details" enabled="false">
+		<classes>
+			<class name="com.infin.leadbox.GstDetailsTest">
+				<methods>
+					<include name="setValidGstDetails" />
+					<include name="setValidPullGstData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="LeadBox Transactions" enabled="false">
+		<classes>
+			<class name="com.infin.leadbox.TransactionsTest">
+				<methods>
+					<include name="setValidTransactionDetails" />
+					<include name="setValidEditTransactionDetails" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="LeadBox Reference" enabled="false">
+		<classes>
+			<class name="com.infin.leadbox.ReferenceTest">
+				<methods>
+					<include name="setValidReferenceDetailsInInfin" />
+					<include name="setValidReferenceAddressDetails" />
+					<include name="setValidReferenceEditBusinessDetails" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="LeadBox Bureau" enabled="false">
+		<classes>
+			<class name="com.infin.leadbox.BureauDetailsTest" />
+		</classes>
+	</test>
+
+	<test name="LeadBox Line" enabled="false">
+		<classes>
+			<class name="com.infin.leadbox.LineTest">
+				<methods>
+					<include name="setValidCreditLineAmount" />
+					<include name="setValidApplyLoanDetails" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="LeadBox Repayment" enabled="false">
+		<classes>
+			<class name="com.infin.leadbox.RepaymentTest">
+				<methods>
+					<include name="setValidRepaymentDetails" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

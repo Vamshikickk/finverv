@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="automation-finverv">
+
+	<parameter name="browser" value="chrome" />
+	<parameter name="siteURL" value="https://infin-dev.finverv.in/" />
+	<parameter name="validuserName" value="testing.team" />
+	<parameter name="validPassword" value="Qwerty@123" />
+	<parameter name="pinCode" value="504272" />
+	<parameter name="filterMobileNumber" value="9959561018" />
+	
+	<test name="LeadBox Personal Details">	
+		<classes>
+			<class name="com.infin.leadbox.PersonalDetailsTest" >
+			<methods>
+					<include name="setValidPersonalDetails" />
+					<include name="setValidPermanentAddress" />
+					<include name="setValidResidentAddress" />
+					<include name ="setValidBankAccount"/>
+					
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="LeadBox Business Details" enabled="false">
+		<classes>
+			<class name="com.infin.leadbox.BusinessDetailsTest" />
+		</classes>
+	</test>
+
+	<test name="LeadBox Co-Borrower Details" enabled="false">
+		<classes>
+			<class name="com.infin.leadbox.CoBorrowerTest" />
+		</classes>
+	</test>
+
+	<test name="LeadBox Gst Details" enabled="false">
+		<classes>
+			<class name="com.infin.leadbox.GstDetailsTest" />
+		</classes>
+	</test>
+
+	<test name="LeadBox Transactions" enabled="false">
+		<classes>
+			<class name="com.infin.leadbox.TransactionsTest" />
+		</classes>
+	</test>
+
+	<test name="LeadBox Reference" enabled="false">
+		<classes>
+			<class name="com.infin.leadbox.ReferenceTest" />
+		</classes>
+	</test>
+
+	<test name="LeadBox Bureau" enabled="false">
+		<classes>
+			<class name="com.infin.leadbox.BureauDetailsTest" />
+		</classes>
+	</test>
+
+	<test name="LeadBox Line" enabled="false">
+		<classes>
+			<class name="com.infin.leadbox.LineTest" />
+		</classes>
+	</test>
+
+	<test name="LeadBox Repayment" enabled="false">
+		<classes>
+			<class name="com.infin.leadbox.RepaymentTest" />
+		</classes>
+	</test>
+
+</suite>

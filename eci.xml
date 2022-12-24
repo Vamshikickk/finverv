@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+
+	<parameter name="browser" value="chrome" />
+	<parameter name="siteURL" value="https://eci-dev.finverv.in/auth/mobile/PRAI" />
+	<parameter name="mobileNumber" value="9959561018" />
+
+	<test name="Personal Details Test" enabled="true">
+		<classes>
+			<class name="com.eci.test.EciPersonalDetailsTabTest">
+				<methods>
+					<include name="setEciPersonalDetails" />
+				</methods>
+			</class>
+		</classes>
+
+	</test>
+
+
+	<test name="Permanent Address Test" enabled="true">
+		<classes>
+			<class name="com.eci.test.EciPermanentAddressTabTest">
+				<methods>
+					<include name="setPermanentAddressDetailsInEci" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Resident Address test" enabled="true">
+		<classes>
+			<class name="com.eci.test.EciResidentAddressTabTest">
+				<methods>
+					<include name="setResidentDetailsInEci" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Business Details test" enabled="true">
+		<classes>
+			<class name="com.eci.test.EciBusinessDetailsTest">
+				<methods>
+					<include name="setBusinessdetailsInEci" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Company Address test" enabled="true">
+		<classes>
+			<class name="com.eci.test.EciCompanyAddressTabTest">
+				<methods>
+					<include name="setCompanyDetailsInEci" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Financial Details test" enabled="true">
+		<classes>
+			<class name="com.eci.test.EciFinancialDetailsTest">
+				<methods>
+					<include name="setFinancialDetails" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

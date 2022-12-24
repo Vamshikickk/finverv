@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="negative-automation-Finverv">
+
+	<test name="Login Test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="siteURL" value="https://infin-dev.finverv.in/" />
+		<classes>
+			<class name="com.infin.test.LogInTest">
+				<methods>
+					<include name="verifyLogIn" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Create Application">
+		<parameter name="browser" value="chrome" />
+		<parameter name="siteURL" value="https://infin-dev.finverv.in/" />
+		<parameter name="validuserName" value="testing.team" />
+		<parameter name="validPassword" value="Qwerty@123" />
+		<classes>
+			<class name="com.infin.leadbox.CreateApplicationTest">
+				<methods>
+					<include name="createApplicationWithInvalidData" />
+					<include name="searchApplicationWithInvliCred" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+</suite>

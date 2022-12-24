@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+
+	<test name="LeadBox Personaldetails" enabled="false">
+		<parameter name="browser" value="chrome" />
+		<parameter name="siteURL" value="https://infin-dev.finverv.in/" />
+		<parameter name="validuserName" value="testing.team" />
+		<parameter name="validPassword" value="Qwerty@123" />
+		<parameter name="pinCode" value="504272" />
+		<parameter name="filterMobileNumber" value="9959561018" />
+		<groups>
+			<define name="daily Basis Testing">
+				<include name="Regression" />
+			</define>
+			<run>
+				<include name="Regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.infin.leadbox.PersonalDetailsTest" />
+		</classes>
+	</test>
+
+	<test name="Personaldetails" enabled="false">
+		<parameter name="browser" value="chrome" />
+		<parameter name="siteURL" value="https://eci-dev.finverv.in/auth/mobile/PRAI" />
+		<parameter name="mobileNumber" value="9959561018" />
+		<groups>
+			<define name="weekly Basis Testing">
+				<include name="Regression" />
+			</define>
+			<run>
+				<include name="Regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.eci.test.EciPersonalDetailsTabTest" />
+		</classes>
+	</test>
+
+	<test name="Permanentdetails" enabled="false">
+		<parameter name="browser" value="chrome" />
+		<parameter name="siteURL" value="https://eci-dev.finverv.in/auth/mobile/PRAI" />
+		<parameter name="mobileNumber" value="9959561018" />
+		<groups>
+			<define name="weekly Basis Testing">
+				<include name="Regression" />
+			</define>
+			<run>
+				<include name="Regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.eci.test.EciPermanentAddressTabTest" />
+		</classes>
+	</test>
+
+	<test name="Residentdetails" enabled="false">
+		<parameter name="browser" value="chrome" />
+		<parameter name="siteURL" value="https://eci-dev.finverv.in/auth/mobile/PRAI" />
+		<parameter name="mobileNumber" value="9959561018" />
+
+		<groups>
+			<define name="weekly Basis Testing">
+				<include name="Regression" />
+			</define>
+			<run>
+				<include name="Regression" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.eci.test.EciResidentAddressTabTest" />
+		</classes>
+
+	</test>
+
+	<test name="Businessdetails" enabled="false">
+		<parameter name="browser" value="chrome" />
+		<parameter name="siteURL" value="https://eci-dev.finverv.in/auth/mobile/PRAI" />
+		<parameter name="mobileNumber" value="9959561018" />
+		<groups>
+			<define name="weekly Basis Testing">
+				<include name="Regression" />
+			</define>
+			<run>
+				<include name="Regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.eci.test.EciBusinessDetailsTest" />
+		</classes>
+	</test>
+
+	<test name="Companydetails" enabled="false">
+		<parameter name="browser" value="chrome" />
+		<parameter name="siteURL" value="https://eci-dev.finverv.in/auth/mobile/PRAI" />
+		<parameter name="mobileNumber" value="9959561018" />
+		<groups>
+			<define name="weekly Basis Testing">
+				<include name="Regression" />
+			</define>
+			<run>
+				<include name="Regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.eci.test.EciCompanyAddressTabTest" />
+		</classes>
+	</test>
+
+	<test name="Financialdetails">
+		<parameter name="browser" value="chrome" />
+		<parameter name="siteURL" value="https://eci-dev.finverv.in/auth/mobile/PRAI" />
+		<parameter name="mobileNumber" value="9959561018" />
+		<groups>
+			<define name="weekly Basis Testing">
+				<include name="Regression" />
+			</define>
+			<run>
+				<include name="Regression" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.eci.test.EciFinancialDetailsTest" />
+		</classes>
+	</test>
+</suite>
